@@ -1,0 +1,6 @@
+/vendor/
+composer.lock
+/js/node_modules/
+/test/flarum/
+.DS_Store
+SUBMISSION.md

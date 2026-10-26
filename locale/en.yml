@@ -1,0 +1,8 @@
+privatus-privatus-analytics:
+  admin:
+    settings:
+      intro: "Privatus Analytics counts visits to your forum without cookies. Paste your site id below and save. You find it in Privatus Analytics under Site settings, Tracking."
+      site_id_label: "Site id"
+      site_id_help: "It starts with pa_, for example pa_7Q2K9XH3AB. Leave it empty to turn tracking off."
+      skip_admins_label: "Do not count admins"
+      skip_admins_help: "When this is on, the script is left out of the page for forum admins who are logged in, so your own visits do not fill your reports."

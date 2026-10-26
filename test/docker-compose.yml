@@ -1,0 +1,15 @@
+services:
+  db:
+    image: mariadb:10.11.18
+    environment:
+      MARIADB_DATABASE: flarum
+      MARIADB_USER: flarum
+      MARIADB_PASSWORD: flarum
+      MARIADB_ROOT_PASSWORD: root
+  flarum:
+    build: .
+    depends_on: [db]
+    ports: ["8089:80"]
+    volumes:
+      - ..:/ext:ro
+      - .:/test:ro

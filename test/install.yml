@@ -1,0 +1,16 @@
+# Throwaway test forum on localhost only.
+debug: true
+baseUrl: http://localhost:8089
+databaseConfiguration:
+  driver: mysql
+  host: db
+  database: flarum
+  username: flarum
+  password: flarum
+  prefix: ''
+adminUser:
+  username: admin
+  password: testpassword123
+  email: admin@example.test
+settings:
+  forum_title: Test Forum
