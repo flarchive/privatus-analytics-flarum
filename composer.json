@@ -1,0 +1,75 @@
+{
+    "name": "privatus/flarum-privatus-analytics",
+    "description": "Adds the cookieless Privatus Analytics tracking script to your Flarum forum, with a settings page for your site id.",
+    "type": "flarum-extension",
+    "license": "MIT",
+    "keywords": [
+        "flarum",
+        "analytics",
+        "privacy",
+        "cookieless",
+        "statistics",
+        "privatus"
+    ],
+    "homepage": "https://privatusanalytics.com",
+    "authors": [
+        {
+            "name": "Two Phase LLC",
+            "homepage": "https://privatusanalytics.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/Privatus-Analytics/flarum/issues",
+        "source": "https://github.com/Privatus-Analytics/flarum",
+        "docs": "https://privatusanalytics.com/docs"
+    },
+    "require": {
+        "flarum/core": "^1.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Privatus\\FlarumAnalytics\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Privatus Analytics",
+            "category": "feature",
+            "icon": {
+                "name": "fas fa-chart-line",
+                "color": "#ffffff",
+                "backgroundColor": "#4f46e5"
+            }
+        },
+        "flarum-cli": {
+            "modules": {
+                "admin": true,
+                "forum": true,
+                "js": true,
+                "jsCommon": false,
+                "css": false,
+                "locale": true,
+                "gitConf": true,
+                "githubActions": false,
+                "prettier": false,
+                "typescript": false,
+                "bundlewatch": false,
+                "backendTesting": false,
+                "editorConfig": false,
+                "styleci": false
+            }
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "archive": {
+        "exclude": [
+            "/js/node_modules",
+            "/js/src",
+            "/js/package-lock.json",
+            "/test",
+            "/.github",
+            "/SUBMISSION.md"
+        ]
+    }
+}
